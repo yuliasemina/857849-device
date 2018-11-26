@@ -10,6 +10,12 @@
         <img src="img/logo.svg" width="200" height="36" alt="Device">
       </a>
       <nav class="main-navigation">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="search" id="search-id" type="text" name="search" placeholder="Поиск по сайту">
+          <button class="button" type="submit">
+            <img src="img/search.svg" width="16" height="16" alt="Найти">
+          </button>
+        </form>
         <ul class="user-navigation">
           <li><a href="#">Валентин Петухов</a></li>
           <li class="inactively"><a href="#">Выйти</a></li>
@@ -17,7 +23,17 @@
         <a href="#">Сравнить</a>
         <a href="#">Корзина</a>
         <ul class="site-navigation">
-          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="#">Каталог товаров</a>
+            <ul class="catalog-menu">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Экшн камеры</a></li>
+            </ul>
+            <button class="button-open-catalog"><img src="img/plus.svg" width="16" height="16" alt="Открыть меню каталога"></button>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
