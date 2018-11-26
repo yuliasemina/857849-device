@@ -42,32 +42,57 @@
           <img src="img/deltadown.jpg" alt="По убыванию" height="30" width="20" class="active">
         </div>
       </section>
-      <section class="filter">
-        <h2 class="visually-hidden">ФИЛЬТР</h2>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <div class="price">
           <p>Стоимость</p>
           <span>0</span>
           <span>5000</span>
         </div>
-        <div class="color">
-          <p>Цвет</p>
-          <ul>
-            <li>Черный</li>
-            <li>Белый</li>
-            <li>Синий</li>
-            <li>Красный</li>
-            <li>РОзовый</li>
-          </ul>
-        </div>
-        <div class="color">
-          <p>Bluetooth</p>
-          <ul>
-            <li>Есть</li>
-            <li>Нет</li>
-          </ul>
-        </div>
-        <div class="button">Показать</div>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цвет:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black-color" id="filter-black-color" checked>
+                <label for="filter-black-color">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white-color" id="filter-white-color">
+                <label for="filter-white-color">Белый</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue-color" id="filter-blue-color" checked>
+                <label for="filter-blue-color">Синий</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red-color" id="filter-red-color" checked>
+                <label for="filter-red-color">Красный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="rose-color" id="filter-rose-color">
+                <label for="filter-rose-color">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="yes" id="filter-availability-yes" checked>
+                <label for="filter-availability-yes">Есть</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="no" id="filter-availability-no">
+                <label for="filter-availability-no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
+
       <section class="items">
         <h2 class="visually-hidden">Список моноподов</h2>
         <ul class="catalog-list">
