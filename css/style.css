@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'gilroyextrabold';
+  src: url('../fonts/ofont.ru_gilroy-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+  text-align: start;
+  background-color: #ffffff;
+  color: #000000;
+  vertical-align: middle;
+  border: none;
+  /*
+  background-image: url("img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  */
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+.modal {
+  display: none
+}
+.button,
+.button-delivery,
+.catalog-nav,
+.site-navigation,
+.transport-company {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  line-height: 56px;
+}
+
+.transport-company {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+header {
+  background-color: #f7e296;
+  background: url("../img/header-j.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+header h2:hover,
+header h2:focus  {
+  color: #635a3c;
+}
+header h2:active {
+  color: #ac9e69;
+}
+
+header a:hover,
+header a:focus {
+  color: #635a3c;
+}
+
+header a:active {
+  color: #d9c784;
+}
+
+.search-form input:hover::placeholder {
+  color: #635a3c;
+}
+
+.search-form input:focus::placeholder {
+  color: #000000;
+}
+
+.search-form button {
+  border: 2px solid black;
+  padding-left:  22px;
+  padding-right:  22px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  font-size: 15px;
+  background:inherit;
+}
+.search-form button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-form button:focus {
+  background-color: #000000;
+  color: #4d4d4d;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #707070;
+  background: url("../img/footer-j.jpg");
+
+}
+
+footer h2:hover,
+footer h2:focus  {
+  color: #b5931c;
+}
+footer h2:active {
+  color: #7e6d31;
+}
+footer h2{
+  color: #ffc600;
+}
+
+footer .site-navigation a,
+.social-button:hover,
+.social-button:focus,
+footer .user-navigation a:hover,
+footer .user-navigation a:focus {
+  color: #ffffff;
+}
+
+.social-button,
+footer .user-navigation a,
+footer .site-navigation a:hover,
+footer .site-navigation a:focus {
+  color: #b5b5b5;
+}
+
+.social-button:active,
+footer .user-navigation a:active,
+footer .site-navigation a:active {
+  color: #7e7e7e;
+}
