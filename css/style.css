@@ -132,7 +132,14 @@ a {
    opacity: 0.3;
 }
 
-.catalog-nav li{
+.catalog-nav {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-nav-image{
   width: 160px;
   height: auto;
   margin: 1px;
@@ -157,10 +164,22 @@ a {
   width: 220px;
   height: 38px;
   background-color: #f7e296;
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  text-transform: uppercase;
-  background-image: url("img/yellow-line.svg") no-repeat 50% 100%;
+  background-image: url('img/yellow-line.svg');
+  margin-bottom: 1px;
+}
+.button:hover {
+
+}
+
+.button:active {
+  color: rgba(0, 0, 0, .3);
 }
 
 .main-footer{
