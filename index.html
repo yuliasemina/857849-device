@@ -70,7 +70,7 @@
     <section class="promo">
       <img src="img/selfie-stick.png" width="384" height="486" alt="Палка для селфи">
       <div>
-        <h2 class="caption-promo">Делай селфи, как Бен Стиллер!</h2>
+        <h2 class="caption">Делай селфи, как Бен Стиллер!</h2>
         <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a href="#" class="button">Подробнее</a>
         <ul>
@@ -148,7 +148,7 @@
         <li class="button"><a href="#">Кредит</a></li>
       </ul>
       <div>
-        <h2 class="caption-delivery">Доставка</h2>
+        <h2 class="caption">Доставка</h2>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </div>
       <div>
@@ -165,7 +165,7 @@
       </ul>
     </article>
     <section class="features">
-      <h2 class="caption-features">О нас</h2>
+      <h2 class="caption">О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
       <ul class="transport-company">
@@ -176,77 +176,88 @@
       <a href="#" class="button">Подробнее о нас</a>
     </section>
     <section class="contacts">
-      <h2 class="caption-contacts">Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
-        Всякое бывает.</p>
-        <div class="map">
-          <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Улица строителей, д.15">
-        </div>
-        <a href="#" class="button">Напишите нам</a>
-      </section>
-      <section class="modal modal-write-us">
-        <h2 class="visually-hidden">Напишите нам</h2>
-        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="user-name">Ваше имя</label>
-            <input class="user-data" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="user-email">Ваш e-mail</label>
-            <input class="user-data" id="user-email" type="email" name="user-email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="user-text">Текст письма</label>
-            <textarea class="user-data" rows="7" id="user-text" name="user-text" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="button" type="submit">
-            Отправить
-          </button>
-        </form>
-        <button class="modal-close" type="button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </section>
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
+      <h2 class="caption">Контакты</h2>
+      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+      <div class="map">
+        <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Улица строителей, д.15">
+      </div>
+      <a href="#" class="button">Напишите нам</a>
+    </section>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <img src="img/map-popup.jpg" width="994" height="593" alt="Офис компании по адресу ул. Строителей, д.15">
+          <label for="user-name">Ваше имя</label>
+          <input class="user-data" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
         </p>
-        <button class="modal-close" type="button">
-          <span class="visually-hidden">Закрыть</span>
+        <p>
+          <label for="user-email">Ваш e-mail</label>
+          <input class="user-data" id="user-email" type="email" name="user-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-text">Текст письма</label>
+          <textarea class="user-data" rows="7" id="user-text" name="user-text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">
+          Отправить
         </button>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <a class="main-footer-logo">
-        <img src="img/yellow-logo.png" width="163" height="36" alt="Интернет магазин Device">
-      </a>
-      <div class="footer-block1">
-        <ul class="user-navigation">
-          <li>
-            <a class="login-link" href="login.html">Войти</a>
-          </li>
-        </ul>
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
-      </div>
-      <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-      <ul class="footer-site-navigation">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+      </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-popup.jpg" width="994" height="593" alt="Офис компании по адресу ул. Строителей, д.15">
+      </p>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <a class="main-footer-logo">
+      <img src="img/yellow-logo.png" width="163" height="36" alt="Интернет магазин Device">
+    </a>
+    <div class="footer-block1">
+      <ul class="user-navigation">
+        <li>
+          <a class="login-link" href="login.html">Войти</a>
+        </li>
       </ul>
-      <p class="footer-contacts">Тел.: +7 (495) 495-95-95</p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button social-button-fb" href="#"><span class="visually-hidden">Интернет-магазин Device в Фейсбук</span></a></li>
-          <li><a class="social-button social-button-in" href="#"><span class="visually-hidden">Интернет-магазин Device в Инстаграм</span></a></li>
-          <li><a class="social-button social-button-tw" href="#"><span class="visually-hidden">Интернет-магазин Device в Твиттере</span></a></li>
-        </ul>
-      </div>
-      <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
-      </a>
-    </footer>
-  </body>
-  </html>
+      <a href="#">Сравнить</a>
+      <a href="#">Корзина</a>
+    </div>
+    <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
+    <ul class="footer-site-navigation">
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <p class="footer-contacts">Тел.: +7 (495) 495-95-95</p>
+    <div class="footer-social">
+      <ul>
+        <li>
+          <a class="social-button social-button-fb" href="#">
+            <span class="visually-hidden">Интернет-магазин Device в Фейсбук</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button-in" href="#">
+            <span class="visually-hidden">Интернет-магазин Device в Инстаграм</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-button-tw" href="#">
+            <span class="visually-hidden">Интернет-магазин Device в Твиттере</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">
+      <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
+    </a>
+  </footer>
+</body>
+</html>
