@@ -46,7 +46,7 @@ a {
 }
 
 .filter fieldset {
-  border:none;
+  border: none;
 }
 
 .caption {
@@ -69,11 +69,11 @@ a {
 }
 
 .main-header-logo:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .main-header-logo:active {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .header-site-navigation {
