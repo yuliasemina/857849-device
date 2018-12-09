@@ -61,11 +61,21 @@ a {
 }
 
 .main-header {
-  background-image: linear-gradient(to top, #f7e296 88%, #ffffff 12%);
+  background-color: #f7e296;
   color: #000000;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 54px;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 22px;
+}
+
+.main-header-logo-gradient {
+  width: 100%;
+  height: 48px;
+  background-image: linear-gradient(to top, #f7e296 60%, #ffffff 40%);
+}
+
+.main-header-logo {
+  margin-left: 60px;
 }
 
 .main-header-logo:hover {
@@ -76,20 +86,24 @@ a {
   opacity: 0.3;
 }
 
-.header-site-navigation {
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
 .catalog-menu {
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 36px;
   text-transform: none;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 553px;
+}
+
+.catalog-menu li:nth-last-child(2) {
+  flex-basis: 330px;
 }
 
 .input-search {
@@ -135,6 +149,14 @@ a {
   color: #4d4d4d;
 }
 
+.main-navigation {
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .main-navigation a:hover {
   color: rgba(0, 0, 0,  0.6);
 }
@@ -143,12 +165,65 @@ a {
   color: rgba(0, 0, 0,  0.3);
 }
 
-.site-navigation {
+.user-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header-line1,
+.header-line2,
+.header-line3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-line1 {
+
+}
+.header-line2 {
+  margin-bottom: 25px;
+}
+
+.header-line1-block1,
+.header-line2-block1 {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
+}
+
+
+.header-line1-block2,
+.header-line2-block2 {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.header-site-navigation {
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-line1-block2 ul {
+  margin-right: 218px;
+}
+
+.header-line2-block2 li:last-child {
+  margin-left: 112px;
+}
+
+.header-line2-block2 li:first-child {
+  margin-right: 39px;
 }
 
 .catalog-nav {
