@@ -321,11 +321,11 @@ a {
 }
 
 .main-footer-logo:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .main-footer-logo:active {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .footer-block1 a {
@@ -354,7 +354,7 @@ a {
 }
 
 .footer-site-navigation a:active {
-    color: rgba(255, 255, 255,  0.3);
+  color: rgba(255, 255, 255,  0.3);
 }
 
 .social-button {
@@ -436,7 +436,7 @@ a {
 }
 
 .filter-input:active + label {
-    color: rgba(0, 0, 0,  1);
+  color: rgba(0, 0, 0,  1);
 }
 
 .filter-input:disabled + label {
@@ -505,9 +505,9 @@ a {
 }
 
 /*.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+position: absolute;
+clip: rect(0 0 0 0);
+width: 1px;
+height: 1px;
+margin: -1px;
 }*/
