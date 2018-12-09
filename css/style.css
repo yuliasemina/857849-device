@@ -63,6 +63,7 @@ a {
 .main-header {
   background-color: #f7e296;
   color: #000000;
+  width: 1160px;
   margin-left: 140px;
   margin-right: 140px;
   margin-top: 22px;
@@ -70,8 +71,8 @@ a {
 
 .main-header-logo-gradient {
   width: 100%;
-  height: 48px;
-  background-image: linear-gradient(to top, #f7e296 60%, #ffffff 40%);
+  height: 38px;
+  background-image: linear-gradient(to top, #f7e296 50%, #ffffff 50%);
 }
 
 .main-header-logo {
@@ -103,7 +104,7 @@ a {
 }
 
 .catalog-menu li:nth-last-child(2) {
-  flex-basis: 330px;
+  flex-basis: 326px;
 }
 
 .input-search {
@@ -133,6 +134,7 @@ a {
 
 .button-search {
   border: 2px solid black;
+  border-bottom: none;
   padding-left:  22px;
   padding-right:  22px;
   padding-top: 18px;
@@ -147,6 +149,14 @@ a {
 .button-search:active {
   background-color: #000000;
   color: #4d4d4d;
+}
+
+.search-form {
+  border-bottom: 2px solid black;
+}
+
+.input-search {
+  width: 357px;
 }
 
 .main-navigation {
@@ -178,13 +188,15 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 
 .header-line1 {
-
+  margin-bottom: 17px;
 }
+
 .header-line2 {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .header-line1-block1,
@@ -194,12 +206,11 @@ a {
   width: 540px;
 }
 
-
 .header-line1-block2,
 .header-line2-block2 {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 400px;
 }
 
 .header-site-navigation {
@@ -215,15 +226,11 @@ a {
 }
 
 .header-line1-block2 ul {
-  margin-right: 218px;
+  margin-right: 90px;
 }
 
 .header-line2-block2 li:last-child {
-  margin-left: 112px;
-}
-
-.header-line2-block2 li:first-child {
-  margin-right: 39px;
+  margin-left: 50px;
 }
 
 .catalog-nav {
@@ -235,8 +242,9 @@ a {
 
 .catalog-nav-image {
   display: inline-block;
+  vertical-align: top;
   width: 160px;
-  height: 160px;
+  min-height: 160px;
   background-color: #f7e296;
   margin-bottom: 42px;
 }
@@ -263,7 +271,7 @@ a {
 
 .delivery {
   width: 1440px;
-  height: 288px;
+  min-height: 288px;
   background-color: #e5e5e5;
   background-image: url("img/deliverysection.svg") no-repeat 100% 100%;
 
@@ -276,8 +284,9 @@ a {
 
 .button {
   display: inline-block;
+  vertical-align: top;
   width: 220px;
-  height: 38px;
+  min-height: 38px;
   background-color: #f7e296;
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
@@ -504,10 +513,10 @@ a {
   opacity: 0.5;
 }
 
-/*.visually-hidden {
+/* .visually-hidden {
 position: absolute;
 clip: rect(0 0 0 0);
 width: 1px;
 height: 1px;
 margin: -1px;
-}*/
+} */
