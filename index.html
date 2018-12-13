@@ -8,71 +8,67 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header class="main-header">
-      <div class="logo-gradient">
-        <a class="main-header-logo">
-          <img src="img/logo.png" width="164" height="36" alt="Интернет магазин Device">
-        </a>
-      </div>
-      <nav class="main-navigation">
-        <div class="header-line1">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label>
-              <span class="visually-hidden">Поиск</span>
-              <input class="input-search" id="search-id" type="text" name="search" placeholder="Поиск по сайту">
-            </label>
-            <button type="submit" class="button-search">Найти</button>
-          </form>
+  <header class="main-header container">
+    <a class="main-header-logo">
+      <img src="img/logo.svg" width="164" height="36" alt="Интернет магазин Device">
+    </a>
+    <nav class="main-navigation">
+      <div class="header-line1">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label>
+            <span class="visually-hidden">Поиск</span>
+            <input class="input-search" id="search-id" type="text" name="search" placeholder="Поиск по сайту">
+          </label>
+          <button type="submit" class="button-search">Найти</button>
+        </form>
 
-          <ul class="user-navigation">
-            <li>
-              <a class="login-link" href="login.html">Войти</a>
-            </li>
-          </ul>
-          <a class="compare-header" href="#">Сравнить</a>
-          <a class="cart-header" href="#">Корзина</a>
-        </div>
-        <ul class="header-site-navigation header-line2">
+        <ul class="user-navigation">
           <li>
-            <a href="#">Каталог товаров</a>
-            <ul class="catalog-menu">
-              <li>
-                <a href="#">Виртуальная реальность</a>
-              </li>
-              <li>
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="#">Квадрокоптеры</a>
-              </li>
-              <li>
-                <a href="monopods.html">Моноподы для селфи</a>
-              </li>
-              <li>
-                <a href="#">Умные часы</a>
-              </li>
-              <li>
-                <a href="#">Экшн камеры</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
+            <a class="login-link" href="login.html">Войти</a>
           </li>
         </ul>
-      </nav>
-    </header>
-  </div>
+        <a class="compare-header" href="#">Сравнить</a>
+        <a class="cart-header" href="#">Корзина</a>
+      </div>
+      <ul class="header-site-navigation header-line2">
+        <li>
+          <a class="catalog-plus" href="#">Каталог товаров</a>
+          <ul class="catalog-menu">
+            <li>
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+            <li>
+              <a href="monopods.html">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="#">Умные часы</a>
+            </li>
+            <li>
+              <a href="#">Экшн камеры</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main class="main-content">
     <h1 class="visually-hidden">Интернет-магазин Device</h1>
-    <section class="promo container promo-gradient">
+    <section class="promo container">
       <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
       <div class="promo-slide-container">
         <h2 class="caption">Делай селфи, <br> как Бен Стиллер!</h2>
@@ -97,7 +93,7 @@
     <nav class="container">
       <ul class="catalog-nav">
         <li>
-          <a href="#">
+          <a>
             <span>Виртуальная реальность</span>
           </a>
         </li>
@@ -210,17 +206,15 @@
     <div class="container">
       <div class="footer-line1">
         <a class="main-footer-logo">
-          <img src="img/yellow-logo.png" width="163" height="36" alt="Интернет магазин Device">
+          <img src="img/yellow-logo.svg" width="163" height="36" alt="Интернет магазин Device">
         </a>
-        <div class="footer-block1">
-          <ul class="footer-user-navigation">
-            <li>
-              <a class="login-link" href="login.html">Войти</a>
-            </li>
-          </ul>
-          <a href="#">Сравнить</a>
-          <a href="#">Корзина</a>
-        </div>
+        <ul class="footer-user-navigation">
+          <li>
+            <a class="login-link" href="login.html">Войти</a>
+          </li>
+        </ul>
+        <a href="#">Сравнить</a>
+        <a href="#">Корзина</a>
       </div>
       <div class="footer-line2">
         <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
@@ -236,30 +230,16 @@
           <li>
             <a class="social-button social-button-fb" href="#">
               <span class="visually-hidden">Интернет-магазин Device в Фейсбук</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                <path fill="#b5b5b5" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z">
-                </path>
-              </svg>
             </a>
           </li>
           <li>
             <a class="social-button social-button-in" href="#">
               <span class="visually-hidden">Интернет-магазин Device в Инстаграм</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                <g fill="#b5b5b5">
-                  <path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"></path>
-                  <path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"></path>
-                  <path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"></path>
-                </g>
-              </svg>
             </a>
           </li>
           <li>
             <a class="social-button social-button-tw" href="#">
               <span class="visually-hidden">Интернет-магазин Device в Твиттере</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                <path fill="#b5b5b5" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"></path>
-              </svg>
             </a>
           </li>
         </ul>
