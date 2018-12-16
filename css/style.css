@@ -446,7 +446,7 @@ position: absolute;
 display: flex;
 justify-content: flex-start;
 align-items: flex-start;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 width: 570px;
 background-color: #f7e296;
 padding-top: 40px;
@@ -457,6 +457,9 @@ padding-right: 530px;
 
 .catalog-menu li {
 margin-bottom: 20px;
+}
+.catalog-menu li:last-child {
+margin-bottom: 0px;
 }
 
 .promo {
