@@ -49,7 +49,94 @@ a {
 
 .modal {
   display: none;
+  position: fixed;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.modal-map {
+  width: 960px;
+  height: 559px;
+  top: 50%;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: -280px;
+}
+
+.modal-map p {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-write-us {
+  width: 760px;
+  padding: 100px;
+  top: 200px;
+  left: 50%;
+  margin-left: -480px;
+  background-color: white;
+  color: black;
+}
+
+.write-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-data {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.write-us-form label {
+  display: block;
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.write-us-form .button-submit {
+  margin-top: 45px;
+}
+
+.user-data {
+  font: inherit;
+  width: 360px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.user-data::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.user-data-text textarea {
+  width: 760px;
+  box-sizing: border-box;
+}
+
+.modal-close {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background-color: transparent;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+
+  font-size: 0;
+  border: 0;
+
+  transform: rotate(45eg);
+}
+
 
 .container {
   width: 1200px;
@@ -837,7 +924,7 @@ a {
 .button {
   display: inline-block;
   background-color: transparent;
-  background-image: linear-gradient(transparent, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+  background-image: linear-gradient(transparent, transparent 42%, #f0c52e 42%, #f0c52e 58%, transparent 58%);
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -848,6 +935,7 @@ a {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  letter-spacing: 1px;
 }
 
 .inner-button {
@@ -1160,11 +1248,17 @@ a {
 }
 
 .filter-input:disabled + label,
-
 .filter-input-radio:disabled + label::after,
 .filter-input-radio:disabled + label::before,
 .filter-input-checkbox:disabled + label::before {
   opacity: 0.3;
+}
+
+.filter-input:active + label,
+.filter-input-radio:active + label::after,
+.filter-input-radio:active + label::before,
+.filter-input-checkbox:active + label::before {
+  opacity: 1;
 }
 
 .catalog-list {
@@ -1210,10 +1304,16 @@ a {
 }
 
 .catalog-item h3 {
+  display: inline-block;
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  width: 260px;
+}
+
+.catalog-item .selfie-wrap {
+  white-space: nowrap;
 }
 
 .catalog-item .catalog-item-price {
