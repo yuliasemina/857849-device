@@ -634,6 +634,10 @@ a {
   display: none;
 }
 
+.slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
 .slider-controls .radio-slide:nth-child(1):checked  ~ .slider-list .slider-item:nth-child(1),
 .slider-controls .radio-slide:nth-child(2):checked  ~ .slider-list .slider-item:nth-child(2),
 .slider-controls .radio-slide:nth-child(3):checked  ~ .slider-list .slider-item:nth-child(3) {
