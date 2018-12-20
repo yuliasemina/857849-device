@@ -71,28 +71,93 @@
   <main class="main-content">
     <h1 class="visually-hidden">Интернет-магазин Device</h1>
     <div class="container">
-      <section class="promo">
-        <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-        <div class="promo-slide-container">
-          <h2 class="caption">Делай селфи, <br> как Бен Стиллер!</h2>
-          <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a href="#" class="description button">Подробнее</a>
-          <ul class="promo-options">
-            <li>
-              <span class="promo-1">8,5 м</span>
-              <span class="promo-2">Длина палки</span>
-            </li>
-            <li>
-              <span class="promo-1">5 кг</span>
-              <span class="promo-2">Вес палки</span>
-            </li>
-            <li>
-              <span class="promo-1">Карбон</span>
-              <span class="promo-2">Материал</span>
-            </li>
-          </ul>
-        </div>
-      </section>
+
+      <div class="slider-controls">
+        <input class="visually-hidden radio-slide" type="radio" id="slide-1" name="toggle" checked>
+        <label class="slider-controls-item slider-controls-item--1" for="slide-1">Слайд 1</label>
+
+        <input class="visually-hidden radio-slide" type="radio" id="slide-2" name="toggle">
+        <label class="slider-controls-item  slider-controls-item--2" for="slide-2">Слайд 2</label>
+
+        <input class="visually-hidden radio-slide" type="radio" id="slide-3" name="toggle">
+        <label class="slider-controls-item slider-controls-item--3" for="slide-3">Слайд 3</label>
+      </div>
+
+      <ul class="slider-list">
+        <li class="slider-item">
+          <section class="promo slide1">
+            <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
+            <div class="promo-slide-container">
+              <p class="slide_number">01</p>
+              <h2 class="caption">Делай селфи, <br> как Бен Стиллер!</h2>
+              <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a href="#" class="description button">Подробнее</a>
+
+              <ul class="promo-options">
+                <li>
+                  <span class="promo-1">8,5 м</span>
+                  <span class="promo-2">Длина палки</span>
+                </li>
+                <li>
+                  <span class="promo-1">5 кг</span>
+                  <span class="promo-2">Вес палки</span>
+                </li>
+                <li>
+                  <span class="promo-1">Карбон</span>
+                  <span class="promo-2">Материал</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </li>
+        <li class="slider-item">
+          <section class="promo slide2">
+            <img src="img/slider-2.png" width="345" height="485" alt="Палка для селфи">
+            <div class="promo-slide-container">
+              <p class="slide_number">02</p>
+              <h2 class="caption">Худеем <br>правильно</h2>
+              <p class="promo-text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>не пропускать занятия и соблюдать диету.</p>
+              <a href="#" class="description button">Подробнее</a>
+
+              <ul class="promo-options">
+                <li>
+                  <span class="promo-1">48 часов</span>
+                  <span class="promo-2">Без подзарядки</span>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </li>
+        <li class="slider-item">
+          <section class="promo slide3">
+            <img src="img/slider-3.png" width="526" height="334" alt="Палка для селфи">
+            <div class="promo-slide-container">
+              <p class="slide_number">03</p>
+              <h2 class="caption">Порхает как бабочка, <br>жалит как пчела!</h2>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a href="#" class="description button">Подробнее</a>
+
+              <ul class="promo-options">
+                <li>
+                  <span class="promo-1">800 м</span>
+                  <span class="promo-2">Дальность полета</span>
+                </li>
+                <li>
+                  <span class="promo-1">50 м</span>
+                  <span class="promo-2">Радиус поражения</span>
+                </li>
+                <li>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </li>
+      </ul>
     </div>
     <nav class="container">
       <ul class="catalog-nav">
