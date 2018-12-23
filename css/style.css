@@ -80,9 +80,6 @@ a {
   position: relative;
   z-index: 1;
   border: none;
-
-  frameborder: 1;
-  allowfullscreen: true;
 }
 
 .modal-write-us {
