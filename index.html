@@ -71,7 +71,6 @@
   <main class="main-content">
     <h1 class="visually-hidden">Интернет-магазин Device</h1>
     <div class="container">
-
       <div class="slider-controls">
         <input class="visually-hidden radio-slide" type="radio" id="slide-1" name="toggle" checked>
         <label class="slider-controls-item slider-controls-item--1" for="slide-1">Слайд 1</label>
@@ -228,15 +227,13 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="button button-features-contacts">Подробнее о нас</a>
+        <a href="#" class="button button-features">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2 class="caption">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="map">
-          <img src="img/map-small.jpg" width="560" height="222" alt="Офис компании по адресу ул. Улица строителей, д.15">
-        </div>
-        <a href="#" class="button button-features-contacts">Напишите нам</a>
+        <img class="map" src="img/map-small.jpg" width="560" height="222" alt="Офис компании по адресу ул. Улица строителей, д.15">
+        <a href="#" class="button button-contacts">Напишите нам</a>
       </section>
     </div>
     <section class="modal modal-write-us">
@@ -264,8 +261,10 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBRIzMAYSD"
+      width="960" height="560" frameborder="1" allowfullscreen="true"></iframe>
       <p>
-        <img src="img/map.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, д.15">
+        <img src="img/map.jpg" width="960" height="560" alt="Офис компании по адресу ул. Строителей, д.15">
       </p>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
@@ -319,5 +318,100 @@
       </div>
     </div>
   </footer>
+
+  <script>
+  var write_us_link =document.querySelector(".button-contacts");
+  var write_us = document.querySelector(".modal-write-us");
+  var close = write_us.querySelector(".modal-close");
+
+  var form_write_us = write_us.querySelector(".write-us-form");
+  var user_name = write_us.querySelector("[name=user-name]");
+  var user_email = write_us.querySelector("[name=user-email]");
+  var user_text = write_us.querySelector("[name=user-text]");
+
+  var isStorageSupport = true;
+  var storage_user_name = "";
+  var storage_user_email = "";
+
+  try {
+    storage_user_name = localStorage.getItem("user_name");
+    storage_user_email = localStorage.getItem("user_email");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  write_us_link.addEventListener ("click", function (evt) {
+    evt.preventDefault();
+    console.log ("2");
+    write_us.classList.add("modal-show");
+    user_name.focus();
+
+    if (storage_user_name) {
+      user_name.value = storage_user_name;
+      user_email.focus();
+    }
+    if (storage_user_email) {
+      user_email.value = storage_user_email;
+      user_text.focus();
+    }
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    write_us.classList.remove("modal-show");
+    write_us.classList.remove("modal-error");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (write_us.classList.contains("modal-show")) {
+        write_us.classList.remove("modal-show");
+        write_us.classList.remove("modal-error");
+
+      }
+    }
+  });
+
+  form_write_us.addEventListener("submit", function (evt) {
+    if (!user_name.value || !user_email.value || !user_text.value) {
+      evt.preventDefault();
+
+      write_us.classList.remove("modal-error");
+      write_us.offsetWidth = write_us.offsetWidth;
+      write_us.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("user_name", user_name.value);
+        localStorage.setItem("user_email", user_email.value);
+      }
+    }
+  });
+
+
+  var small_map = document.querySelector(".map");
+  var modal_map = document.querySelector(".modal-map");
+  var close_map = modal_map.querySelector(".modal-close");
+
+  small_map.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal_map.classList.add("modal-show");
+  });
+
+  close_map.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal_map.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (modal_map.classList.contains("modal-show")) {
+        modal_map.classList.remove("modal-show");
+      }
+    }
+  });
+
+  </script>
 </body>
 </html>
