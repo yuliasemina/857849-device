@@ -199,13 +199,39 @@
           <li class="button-delivery"><a href="#">Гарантия</a></li>
           <li class="button-delivery"><a href="#">Кредит</a></li>
         </ul>
-        <div class="delivery-title">
-          <h2 class="caption">Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div class="delivery-man">
-          <img src="img/delivery.svg" width="136" height="164" alt="Курьер">
-        </div>
+
+        <ul class="servises-slider">
+            <li class="servis-slide slide1">
+                <div class="servises-title">
+                  <h2 class="caption">Доставка</h2>
+                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </div>
+                <div class="servises-image">
+                  <img src="img/delivery.svg" width="136" height="164" alt="Курьер">
+                </div>
+            </li>
+            <li class="servis-slide slide2">
+                <div class="servises-title">
+                  <h2 class="caption">Гарантия</h2>
+                  <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+Товар, не дом, конечно же.</p>
+                </div>
+                <div class="servises-image">
+                  <img src="img/warranty.svg" width="171" height="194" alt="Гарантия">
+                </div>
+            </li>
+            <li class="servis-slide slide3">
+                <div class="servises-title">
+                  <h2 class="caption">Кредит</h2>
+                  <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+условия кредита. Выгодные для нашего банка, разумеется.</p>
+                </div>
+                <div class="servises-image">
+                  <img src="img/credit.svg" width="156" height="186" alt="Кредит">
+                </div>
+            </li>
+        </ul>
+
       </div>
     </section>
     <article class="partners-logo container">
@@ -403,7 +429,7 @@
     modal_map.classList.remove("modal-show");
   });
 
-   window.addEventListener("keydown", function (evt) {
+  window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (modal_map.classList.contains("modal-show")) {

@@ -628,6 +628,7 @@ a {
 .catalog-menu {
   display: none;
   position: absolute;
+  z-index: 1;
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 560px;
@@ -748,6 +749,7 @@ a {
 .slider-controls .radio-slide:nth-child(2):checked  ~ .slider-list .slider-item:nth-child(2),
 .slider-controls .radio-slide:nth-child(3):checked  ~ .slider-list .slider-item:nth-child(3) {
   display: block;
+  background-color: green;
 }
 
 .promo-slide-container {
@@ -960,15 +962,39 @@ a {
   background-color: black;
 }
 
-.delivery-title {
-  width: 432px;
-  margin-top: -45px;
-  margin-left: 60px;
+.servises-slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.delivery-man {
+.servises-slider .servis-slide {
+  display: flex;
+  width: 900px;
+  flex-wrap: nowrap;
+}
+
+.servises-slider .servis-slide {
+  display: none;
+}
+
+.servises-slider .servis-slide:nth-child(3) {
+  display: flex;
+}
+
+.servises-slider .servis-slide {
+  display: none;
+}
+
+.servises-title {
+  width: 432px;
+  margin-top: -45px;
+  margin-left: 120px;
+}
+
+.servises-image {
   margin-top: 8px;
-  margin-right: 62px;
+  margin-left: 125px;
 }
 
 .button-delivery a {
