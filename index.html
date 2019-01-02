@@ -31,7 +31,7 @@
           <a class="compare-header" href="#">Сравнить</a>
           <a class="cart-header" href="#">Корзина</a>
         </div>
-        <ul class="header-site-navigation header-line2">
+        <ul class="header-site-navigation">
           <li>
             <a class="catalog-plus" href="#">Каталог товаров</a>
             <ul class="catalog-menu">
@@ -56,13 +56,17 @@
             </ul>
           </li>
           <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
+            <ul class="header-line2">
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Гарантия</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -71,23 +75,16 @@
   <main class="main-content">
     <h1 class="visually-hidden">Интернет-магазин Device</h1>
     <div class="container">
-      <div class="slider-controls">
-        <input class="visually-hidden radio-slide" type="radio" id="slide-1" name="toggle" checked>
-        <label class="slider-controls-item slider-controls-item--1" for="slide-1">Слайд 1</label>
-
-        <input class="visually-hidden radio-slide" type="radio" id="slide-2" name="toggle">
-        <label class="slider-controls-item  slider-controls-item--2" for="slide-2">Слайд 2</label>
-
-        <input class="visually-hidden radio-slide" type="radio" id="slide-3" name="toggle">
-        <label class="slider-controls-item slider-controls-item--3" for="slide-3">Слайд 3</label>
-      </div>
-
+      <ul class="slider-controls">
+        <li class="slider-controls-item slider-controls-item--1 toggle">Слайд 1</li>
+        <li class="slider-controls-item  slider-controls-item--2">Слайд 2</li>
+        <li class="slider-controls-item slider-controls-item--3">Слайд 3</li>
+      </ul>
       <ul class="slider-list">
-        <li class="slider-item">
+        <li class="slider-item promo-slide-1">
           <section class="promo slide1">
             <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
             <div class="promo-slide-container">
-              <p class="slide_number">01</p>
               <h2 class="caption">Делай селфи, <br> как Бен Стиллер!</h2>
               <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a href="#" class="description button">Подробнее</a>
@@ -109,11 +106,10 @@
             </div>
           </section>
         </li>
-        <li class="slider-item">
+        <li class="slider-item promo-slide-2">
           <section class="promo slide2">
             <img src="img/slider-2.png" width="345" height="485" alt="Палка для селфи">
             <div class="promo-slide-container">
-              <p class="slide_number">02</p>
               <h2 class="caption">Худеем <br>правильно</h2>
               <p class="promo-text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>не пропускать занятия и соблюдать диету.</p>
               <a href="#" class="description button">Подробнее</a>
@@ -131,12 +127,11 @@
             </div>
           </section>
         </li>
-        <li class="slider-item">
+        <li class="slider-item promo-slide-3">
           <section class="promo slide3">
             <img src="img/slider-3.png" width="526" height="334" alt="Палка для селфи">
             <div class="promo-slide-container">
-              <p class="slide_number">03</p>
-              <h2 class="caption">Порхает как бабочка, <br>жалит как пчела!</h2>
+              <h2 class="caption">Порхает как бабочка, жалит как пчела!</h2>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.
               </p>
               <a href="#" class="description button">Подробнее</a>
@@ -149,8 +144,6 @@
                 <li>
                   <span class="promo-1">50 м</span>
                   <span class="promo-2">Радиус поражения</span>
-                </li>
-                <li>
                 </li>
               </ul>
             </div>
@@ -192,44 +185,46 @@
         </li>
       </ul>
     </nav>
-    <section class="delivery delivery-gradient">
-      <div class="delivery-container">
-        <ul class="delivery-items">
+    <section class="servises servises-gradient">
+      <div class="servises-container">
+        <ul class="servises-items">
           <li class="button-delivery"><a href="#">Доставка</a></li>
           <li class="button-delivery"><a href="#">Гарантия</a></li>
           <li class="button-delivery"><a href="#">Кредит</a></li>
         </ul>
 
         <ul class="servises-slider">
-            <li class="servis-slide slide1">
-                <div class="servises-title">
-                  <h2 class="caption">Доставка</h2>
-                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                </div>
-                <div class="servises-image">
-                  <img src="img/delivery.svg" width="136" height="164" alt="Курьер">
-                </div>
-            </li>
-            <li class="servis-slide slide2">
-                <div class="servises-title">
-                  <h2 class="caption">Гарантия</h2>
-                  <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-Товар, не дом, конечно же.</p>
-                </div>
-                <div class="servises-image">
-                  <img src="img/warranty.svg" width="171" height="194" alt="Гарантия">
-                </div>
-            </li>
-            <li class="servis-slide slide3">
-                <div class="servises-title">
-                  <h2 class="caption">Кредит</h2>
-                  <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-условия кредита. Выгодные для нашего банка, разумеется.</p>
-                </div>
-                <div class="servises-image">
-                  <img src="img/credit.svg" width="156" height="186" alt="Кредит">
-                </div>
-            </li>
+          <li class="servis-slide slide1">
+            <div class="servises-title">
+              <h2 class="caption">Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="servises-image">
+              <img src="img/delivery.svg" width="136" height="164" alt="Курьер">
+            </div>
+          </li>
+          <li class="servis-slide slide2">
+            <div class="servises-title">
+              <h2 class="caption">Гарантия</h2>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.
+              </p>
+            </div>
+            <div class="servises-image">
+              <img src="img/warranty.svg" width="171" height="194" alt="Гарантия">
+            </div>
+          </li>
+          <li class="servis-slide slide3">
+            <div class="servises-title">
+              <h2 class="caption">Кредит</h2>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </div>
+            <div class="servises-image">
+              <img src="img/credit.svg" width="156" height="186" alt="Кредит">
+            </div>
+          </li>
         </ul>
 
       </div>
@@ -305,11 +300,11 @@
         </a>
         <ul class="footer-user-navigation">
           <li>
-            <a class="login-link" href="login.html">Войти</a>
+            <a class="login-link-footer" href="login.html">Войти</a>
           </li>
         </ul>
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
+        <a class="compare-footer" href="#">Сравнить</a>
+        <a class="cart-footer" href="#">Корзина</a>
       </div>
       <div class="footer-line2">
         <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
@@ -345,7 +340,7 @@
     </div>
   </footer>
 
-<script>
+  <script>
   var write_us_link =document.querySelector(".button-contacts");
   var write_us = document.querySelector(".modal-write-us");
   var close = write_us.querySelector(".modal-close");
@@ -438,6 +433,6 @@
     }
   });
 
-</script>
+  </script>
 </body>
 </html>
