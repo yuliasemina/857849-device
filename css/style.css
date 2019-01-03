@@ -523,7 +523,7 @@ a {
   content: "";
   position: absolute;
   background-image: url("../img/search.svg");
-  z-index: 10;
+  z-index: 1;
   background-repeat: no-repeat;
   width: 17px;
   height: 17px;
@@ -1282,13 +1282,17 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  padding-top:11px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
   outline: none;
+}
+
+.add-to-cart {
+  letter-spacing: 3.5px;
 }
 
 .inner-button {
@@ -1783,6 +1787,7 @@ a {
 
 .catalog-item article {
   display: flex;
+  position: relative;
   justify-content: space-between;
   width: 360px;
   margin-top: 27px;
@@ -1800,7 +1805,6 @@ a {
   display: none;
   width: 360px;
   height: 380px;
-  margin-top: -45px;
   z-index: 1;
   background-color: rgba(239, 239, 239, 0.7);
   flex-direction: column;
@@ -1839,9 +1843,11 @@ a {
 }
 
 .add-to-compare {
-  margin-top: 20px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
+  margin-top: 15px;
   color: rgba(0, 0, 0,  0.6);
 }
 
@@ -1905,6 +1911,36 @@ a {
 .navpage li:first-child:active,
 .navpage li:last-child:active {
   opacity: 0.5;
+}
+
+.new::after {
+  content: "new";
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  margin-left: -63px;
+  top: 50px;
+  left: 100%;
+}
+.new::before {
+  opacity: 0.2;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 100%;
+  top: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: -80px;
 }
 
 .visually-hidden:not(:focus):not(:active),
