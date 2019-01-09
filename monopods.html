@@ -5,7 +5,7 @@
   <title>Моноподы для селфи</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/stylemin.css" rel="stylesheet">
 </head>
 <body>
 
@@ -139,11 +139,11 @@
             <legend>Bluetooth</legend>
             <ul class="filter-bluetooth">
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="yes" id="filter-availability-yes" checked>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-group" value="yes" id="filter-availability-yes" checked>
                 <label for="filter-availability-yes">Есть</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="no" id="filter-availability-no">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-group" value="no" id="filter-availability-no">
                 <label for="filter-availability-no">Нет</label>
               </li>
             </ul>
@@ -158,8 +158,10 @@
           <a href="#" class="sort-price">По цене</a>
           <a href="#" class="sort-type">По типу</a>
           <a href="#" class="sort-popular">По популярности</a>
+          <div>
           <a href="#" class="ascend"><span class="visually-hidden">По возрастанию</span></a>
           <a href="#" class="descend"><span class="visually-hidden">По убыванию</span></a>
+        </div>
         </section>
         <section class="items">
           <h2 class="visually-hidden">Список моноподов</h2>
@@ -220,14 +222,13 @@
           </ul>
         </nav>
       </div>
-
       <div class="sort-color"></div>
     </div>
   </main>
   <footer class="main-footer">
     <div class="container">
       <div class="footer-line1">
-        <a class="main-footer-logo">
+        <a href="index.html" class="main-footer-logo">
           <img src="img/yellow-logo.svg" width="163" height="36" alt="Интернет магазин Device">
         </a>
         <ul class="footer-user-navigation">

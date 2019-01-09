@@ -5,7 +5,7 @@
   <title>Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/stylemin.css" rel="stylesheet">
 </head>
 <body>
   <header class="container">
@@ -81,7 +81,7 @@
         <li class="slider-controls-item slider-controls-item--3">Слайд 3</li>
       </ul>
       <ul class="slider-list">
-        <li class="slider-item promo-slide-1">
+        <li class="slider-item promo-slide-1 slider-list-display-block">
           <section class="promo slide1">
             <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
             <div class="promo-slide-container">
@@ -119,10 +119,6 @@
                   <span class="promo-1">48 часов</span>
                   <span class="promo-2">Без подзарядки</span>
                 </li>
-                <li>
-                </li>
-                <li>
-                </li>
               </ul>
             </div>
           </section>
@@ -135,7 +131,6 @@
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.
               </p>
               <a href="#" class="description button">Подробнее</a>
-
               <ul class="promo-options">
                 <li>
                   <span class="promo-1">800 м</span>
@@ -188,13 +183,13 @@
     <section class="servises servises-gradient">
       <div class="servises-container">
         <ul class="servises-items">
-          <li class="button-delivery"><a href="#">Доставка</a></li>
-          <li class="button-delivery"><a href="#">Гарантия</a></li>
-          <li class="button-delivery"><a href="#">Кредит</a></li>
+          <li><a class="button-servises delivery active-servises" href="#">Доставка</a></li>
+          <li><a class="button-servises warranty" href="#">Гарантия</a></li>
+          <li><a class="button-servises credit" href="#">Кредит</a></li>
         </ul>
 
         <ul class="servises-slider">
-          <li class="servis-slide slide1">
+          <li class="servis-slide servise-slide1 slide-delivery servis-slide-flex">
             <div class="servises-title">
               <h2 class="caption">Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -203,7 +198,7 @@
               <img src="img/delivery.svg" width="136" height="164" alt="Курьер">
             </div>
           </li>
-          <li class="servis-slide slide2">
+          <li class="servis-slide servise-slide2 slide-warranty">
             <div class="servises-title">
               <h2 class="caption">Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
@@ -214,7 +209,7 @@
               <img src="img/warranty.svg" width="171" height="194" alt="Гарантия">
             </div>
           </li>
-          <li class="servis-slide slide3">
+          <li class="servis-slide servise-slide3 slide-credit">
             <div class="servises-title">
               <h2 class="caption">Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
@@ -270,7 +265,7 @@
         </p>
         <p class="user-data-text">
           <label for="user-text">Текст письма</label>
-          <textarea class="user-data" rows="7" id="user-text" name="user-text" placeholder="В свободной форме"></textarea>
+          <textarea class="user-data" rows="4" id="user-text" name="user-text" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button inner-button button-submit" type="submit">
           Отправить
@@ -344,6 +339,12 @@
   var write_us_link =document.querySelector(".button-contacts");
   var write_us = document.querySelector(".modal-write-us");
   var close = write_us.querySelector(".modal-close");
+  var slide_promo1 = document.querySelector(".slider-controls-item--1");
+  var slide_promo2 = document.querySelector(".slider-controls-item--2");
+  var slide_promo3 = document.querySelector(".slider-controls-item--3");
+  var promo_slide_1 = document.querySelector(".promo-slide-1");
+  var promo_slide_2 = document.querySelector(".promo-slide-2");
+  var promo_slide_3 = document.querySelector(".promo-slide-3");
 
   var form_write_us = write_us.querySelector(".write-us-form");
   var user_name = write_us.querySelector("[name=user-name]");
@@ -353,6 +354,107 @@
   var isStorageSupport = true;
   var storage_user_name = "";
   var storage_user_email = "";
+
+  var delivery = document.querySelector(".delivery");
+  var warranty = document.querySelector(".warranty");
+  var credit = document.querySelector(".credit");
+
+  var slide_delivery = document.querySelector(".slide-delivery");
+  var slide_warranty = document.querySelector(".slide-warranty");
+  var slide_credit = document.querySelector(".slide-credit");
+  var   index_slide_promo=0;
+  var   index_slide_servises=0;
+
+  delivery.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    delivery.classList.add("active-servises");
+    slide_delivery.classList.add("servis-slide-flex");
+
+    if (slide_warranty.classList.contains("servis-slide-flex")) {
+      slide_warranty.classList.remove("servis-slide-flex");
+      warranty.classList.remove("active-servises");
+    }
+    if (slide_credit.classList.contains("servis-slide-flex")) {
+      slide_credit.classList.remove("servis-slide-flex");
+      credit.classList.remove("active-servises");
+    }
+  });
+
+  warranty.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    warranty.classList.add("active-servises");
+    slide_warranty.classList.add("servis-slide-flex");
+
+    if (slide_delivery.classList.contains("servis-slide-flex")) {
+      slide_delivery.classList.remove("servis-slide-flex");
+      delivery.classList.remove("active-servises");
+    }
+    if (slide_credit.classList.contains("servis-slide-flex")) {
+      slide_credit.classList.remove("servis-slide-flex");
+      credit.classList.remove("active-servises");
+    }
+  });
+
+  credit.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    credit.classList.add("active-servises");
+    slide_credit.classList.add("servis-slide-flex");
+
+    if (slide_delivery.classList.contains("servis-slide-flex")) {
+      slide_delivery.classList.remove("servis-slide-flex");
+      delivery.classList.remove("active-servises");
+    }
+    if (slide_warranty.classList.contains("servis-slide-flex")) {
+      slide_warranty.classList.remove("servis-slide-flex");
+      warranty.classList.remove("active-servises");
+    }
+  });
+
+  slide_promo1.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    slide_promo1.classList.add("toggle");
+    promo_slide_1.classList.add("slider-list-display-block");
+
+    if (slide_promo2.classList.contains("toggle")) {
+      slide_promo2.classList.remove("toggle");
+      promo_slide_2.classList.remove("slider-list-display-block");
+    }
+    if (slide_promo3.classList.contains("toggle")) {
+      slide_promo3.classList.remove("toggle");
+      promo_slide_3.classList.remove("slider-list-display-block");
+    }
+
+  });
+
+  slide_promo2.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    slide_promo2.classList.add("toggle");
+    promo_slide_2.classList.add("slider-list-display-block");
+
+    if (slide_promo1.classList.contains("toggle")) {
+      slide_promo1.classList.remove("toggle");
+      promo_slide_1.classList.remove("slider-list-display-block");
+    }
+    if (slide_promo3.classList.contains("toggle")) {
+      slide_promo3.classList.remove("toggle");
+      promo_slide_3.classList.remove("slider-list-display-block");
+    }
+  });
+
+  slide_promo3.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    slide_promo3.classList.add("toggle");
+    promo_slide_3.classList.add("slider-list-display-block");
+
+    if (slide_promo1.classList.contains("toggle")) {
+      slide_promo1.classList.remove("toggle");
+      promo_slide_1.classList.remove("slider-list-display-block");
+    }
+    if (slide_promo2.classList.contains("toggle")) {
+      slide_promo2.classList.remove("toggle");
+      promo_slide_2.classList.remove("slider-list-display-block");
+    }
+  });
 
   try {
     storage_user_name = localStorage.getItem("user_name");
