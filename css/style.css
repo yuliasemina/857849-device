@@ -1652,7 +1652,8 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 80px;
+
+    margin-bottom: 76px;
     margin-top: 102px;
   }
 
